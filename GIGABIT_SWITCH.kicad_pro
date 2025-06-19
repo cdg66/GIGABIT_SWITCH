@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 2.0
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -485,13 +485,959 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "100R_Diff",
+        "pcb_color": "rgb(0, 0, 255)",
+        "priority": 2,
+        "schematic_color": "rgb(0, 0, 255)"
+      },
+      {
+        "name": "50R_Se",
+        "pcb_color": "rgb(255, 153, 0)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 153, 0)"
+      },
+      {
+        "name": "90R_Diff",
+        "pcb_color": "rgb(255, 0, 255)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 0, 255)"
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/main page/Compute module/Ethernet_Pair0_N": [
+        "100R_Diff"
+      ],
+      "/main page/Compute module/Ethernet_Pair0_P": [
+        "100R_Diff"
+      ],
+      "/main page/Compute module/Ethernet_Pair1_N": [
+        "100R_Diff"
+      ],
+      "/main page/Compute module/Ethernet_Pair1_P": [
+        "100R_Diff"
+      ],
+      "/main page/Compute module/Ethernet_Pair2_N": [
+        "100R_Diff"
+      ],
+      "/main page/Compute module/Ethernet_Pair2_P": [
+        "100R_Diff"
+      ],
+      "/main page/Compute module/Ethernet_Pair3_N": [
+        "100R_Diff"
+      ],
+      "/main page/Compute module/Ethernet_Pair3_P": [
+        "100R_Diff"
+      ],
+      "/main page/Compute module/Ethernet_SYNC_OUT": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO12": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO13": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO14": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO15": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO16": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO17": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO2": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO22": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO23": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO24": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO25": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO26": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO27": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO3": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO6": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/GPIO7": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/I2C_SCL0": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/I2C_SDA0": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/ID_SC": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/ID_SD": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/PCIE_DET_nWAKE": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/PCIE_PWR_EN": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/PCIe_CLK_N": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/PCIe_CLK_P": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/PCIe_RX_N": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/PCIe_RX_P": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/PCIe_TX_N": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/PCIe_TX_P": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-0-D_N": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-0-D_P": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-0-RX_N": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-0-RX_P": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-0-TX_N": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-0-TX_P": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-1-D_N": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-1-D_P": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-1-RX_N": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-1-RX_P": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-1-TX_N": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/USB3-1-TX_P": [
+        "90R_Diff"
+      ],
+      "/main page/Compute module/~{PCIe_CLK_nREQ}": [
+        "50R_Se"
+      ],
+      "/main page/Compute module/~{PCIe_nRST}": [
+        "50R_Se"
+      ],
+      "/main page/KSZ_SCL": [
+        "50R_Se"
+      ],
+      "/main page/KSZ_SDI": [
+        "50R_Se"
+      ],
+      "/main page/KSZ_SDO": [
+        "50R_Se"
+      ],
+      "/main page/PI_RX": [
+        "50R_Se"
+      ],
+      "/main page/PI_TX": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/C0_0_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C0_0_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C0_1_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C0_1_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C0_2_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C0_2_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C0_3_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C0_3_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C1_0_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C1_0_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C1_1_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C1_1_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C1_2_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C1_2_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C1_3_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C1_3_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C2_0_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C2_0_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C2_1_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C2_1_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C2_2_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C2_2_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C2_3_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C2_3_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C3_0_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C3_0_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C3_1_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C3_1_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C3_2_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C3_2_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C3_3_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C3_3_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C4_0_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C4_0_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C4_1_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C4_1_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C4_2_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C4_2_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C4_3_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C4_3_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C5_0_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C5_0_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C5_1_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C5_1_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C5_2_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C5_2_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C5_3_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C5_3_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C6_0_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C6_0_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C6_1_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C6_1_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C6_2_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C6_2_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C6_3_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C6_3_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C7_0_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C7_0_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C7_1_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C7_1_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C7_2_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C7_2_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C7_3_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/C7_3_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/EECLK{slash}GPIO3": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/EECS{slash}GPIO0": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/EEDI{slash}GPIO1": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/EEDO{slash}GPIO2": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/GPIO_2": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/I2C_SDA": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/KZC25MHz": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/LAN_125MHz": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/LED_CLK": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/LED_DO": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/MDC": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/MDIO": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/P0_D0N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P0_D0P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P0_D1N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P0_D1P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P0_D2N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P0_D2P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P0_D3N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P0_D3P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P1_D0N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P1_D0P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P1_D1N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P1_D1P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P1_D2N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P1_D2P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P1_D3N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P1_D3P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P2_D0N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P2_D0P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P2_D1N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P2_D1P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P2_D2N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P2_D2P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P2_D3N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P2_D3P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P3_D0N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P3_D0P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P3_D1N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P3_D1P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P3_D2N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P3_D2P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P3_D3N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P3_D3P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P4_D0N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P4_D0P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P4_D1N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P4_D1P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P4_D2N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P4_D2P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P4_D3N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P4_D3P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P5_D0N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P5_D0P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P5_D1N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P5_D1P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P5_D2N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P5_D2P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P5_D3N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P5_D3P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P6_D0N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P6_D0P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P6_D1N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P6_D1P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P6_D2N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P6_D2P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P6_D3N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P6_D3P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P7_D0N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P7_D0P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P7_D1N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P7_D1P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P7_D2N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P7_D2P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P7_D3N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/P7_D3P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/PCIE_RX_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/PCIE_RX_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/PCIE_TX_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/PCIE_TX_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/PTP_IO": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/REFCLK_SEL1": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/REFCLK_SEL2": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RXC": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RXD0": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RXD1": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RXD2": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RXD3": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RXD6_0": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RXD6_1": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RXD6_2": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RXD6_3": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RX_CLK6{slash}REFCLKO6": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RX_CTL": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/RX_CTL6": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/S4_RX_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/S4_RX_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/S4_TX_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/S4_TX_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/S8_RXN": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/S8_RXP": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/S8_TXN": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/S8_TXP": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/SFP1_LOS": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP1_RATESEL": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP1_RX_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/SFP1_RX_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/SFP1_SCL": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP1_TXDISABLE": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP1_TXFAULT": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP1_TX_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/SFP1_TX_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/SFP2_LOS": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP2_RATESEL": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP2_RX_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/SFP2_RX_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/SFP2_SCL": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP2_TXDISABLE": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP2_TXFAULT": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/SFP2_TX_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/SFP2_TX_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/S_IN_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/S_IN_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/S_OUT_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/S_OUT_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/TXC": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TXD0": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TXD1": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TXD2": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TXD3": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TXD6_0": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TXD6_1": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TXD6_2": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TXD6_3": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TXRX5_1A_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/TXRX5_1A_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/TXRX5_1B_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/TXRX5_1B_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/TXRX5_1C_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/TXRX5_1C_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/TXRX5_1D_N": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/TXRX5_1D_P": [
+        "100R_Diff"
+      ],
+      "/main page/SWITCH/TX_CLK6{slash}REFCLKI6": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TX_CTL": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/TX_CTL6": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/USBC_TX1_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USBC_TX1_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USBC_TX2_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USBC_TX2_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_D_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_D_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_RX1_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_RX1_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_RX2_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_RX2_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_RX_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_RX_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_TX1_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_TX1_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_TX2_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_TX2_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_TX_N": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/USB_TX_P": [
+        "90R_Diff"
+      ],
+      "/main page/SWITCH/VSC_125MHz": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/~{KSZ_INTRP}": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/~{SFP1_MODEDET}": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/~{SFP2_MODEDET}": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH/~{VSC_IRQ}": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH_RESET": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH_RX": [
+        "50R_Se"
+      ],
+      "/main page/SWITCH_TX": [
+        "50R_Se"
+      ],
+      "/main page/VSC_SI_CLK": [
+        "50R_Se"
+      ],
+      "/main page/VSC_SI_DI": [
+        "50R_Se"
+      ],
+      "/main page/VSC_SI_DO": [
+        "50R_Se"
+      ],
+      "/main page/VSC_SI_~{CS0}": [
+        "50R_Se"
+      ],
+      "/main page/~{KSZ_SCS}": [
+        "50R_Se"
+      ],
+      "Net-(U3A-GPIO_14)": [
+        "50R_Se"
+      ],
+      "Net-(U3A-GPIO_7)": [
+        "50R_Se"
+      ],
+      "Net-(U3A-REFCLK_N)": [
+        "50R_Se"
+      ],
+      "Net-(U4A-IBA)": [
+        "50R_Se"
+      ],
+      "Net-(U4A-ISET)": [
+        "50R_Se"
+      ],
+      "Net-(U4A-SYNCLKO)": [
+        "50R_Se"
+      ],
+      "Net-(U5-MDC)": [
+        "50R_Se"
+      ],
+      "Net-(X1-OUT)": [
+        "50R_Se"
+      ],
+      "Net-(X2-OUT)": [
+        "50R_Se"
+      ],
+      "Net-(Y1-Out)": [
+        "50R_Se"
+      ],
+      "unconnected-(U3A-CLKOUTPLL_N-Pad79)": [
+        "50R_Se"
+      ],
+      "unconnected-(U3A-CLKOUTPLL_P-Pad81)": [
+        "50R_Se"
+      ],
+      "unconnected-(U5-REFCLK_25{slash}GPIO11-Pad61)": [
+        "50R_Se"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -625,6 +1571,12 @@
           "group_by": false,
           "label": "STANDARD",
           "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
           "show": false
         },
         {
